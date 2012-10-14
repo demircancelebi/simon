@@ -167,19 +167,12 @@ body {
         background: #4b82f6; }
 
 @font-face {
-  font-family: 'PecitaMedium';
-  src: url("fonts/Pecita-webfont.eot");
-  src: url("fonts/Pecita-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Pecita-webfont.woff") format("woff"), url("fonts/Pecita-webfont.ttf") format("truetype"), url("fonts/Pecita-webfont.svg#PecitaMedium") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'PermanentMarkerRegular';
   src: url("fonts/PermanentMarker-webfont.eot");
   src: url("fonts/PermanentMarker-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/PermanentMarker-webfont.woff") format("woff"), url("fonts/PermanentMarker-webfont.ttf") format("truetype"), url("fonts/PermanentMarker-webfont.svg#PermanentMarkerRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-/* line 85, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 .right, .simon .simon-block .circle-2, .simon .simon-block .circle-4 {
   float: right; }
