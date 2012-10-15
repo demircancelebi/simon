@@ -7,20 +7,22 @@
 			this.circle3 = $('.circle-3');
 			this.circle4 = $('.circle-4');
 			this.circles = [Simon.circle1,Simon.circle2,Simon.circle3,Simon.circle4];
-			this.clickTime = 200;
+			
+			Simon.simonSaysHandler("Start the simon");
+
 			this.array =[];
 			this.shortArray =[];
 			this.playerArray = [];
 			this.roundNumber = 0;
+			this.clickTime = 200;
+			this.waitTime = 600;
 			this.gameOn = false;
 			this.gameOver = false;
 			this.events();
-			this.waitTime = 600;
 		},
 
 		events:function(){
 			this.simonSays.on('click', this.start);
-			Simon.circle1
 		},
 
 		start:function(){
