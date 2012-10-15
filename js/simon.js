@@ -7,7 +7,7 @@
 			this.circle3 = $('.circle-3');
 			this.circle4 = $('.circle-4');
 			this.circles = [Simon.circle1,Simon.circle2,Simon.circle3,Simon.circle4];
-			this.clickTime = 400;
+			this.clickTime = 200;
 			this.array =[];
 			this.shortArray =[];
 			this.playerArray = [];
@@ -20,6 +20,7 @@
 
 		events:function(){
 			this.simonSays.on('click', this.start);
+			Simon.circle1
 		},
 
 		start:function(){
@@ -29,14 +30,7 @@
 				}else{
 					$('*[class^="circle"]').off('click', Simon.checkPlayer);
 				}
-
-				$.each(Simon.circles, function(){
-					$(this).on('mousedown', function(){
-						$(this).addClass('active');
-					}).on('mouseup' , function(){
-						$(this).removeClass('active');
-					});
-				});
+				$.each(Simon.circles, Simon._onCircleClick);
 				Simon.gameOn = true;
 				Simon.newRound();
 			}
@@ -144,6 +138,16 @@
 			Simon.simonSaysHandler(["your turn","play now"]);
 		},
 
+		_onCircleClick: function(){
+			$(this).on('mousedown', function(){
+				var nth = $(this).attr('class').replace('circle-','');
+					MIDI.noteOn(60, nth*2 + 73, 50, 0);
+					$(this).addClass('active');
+			}).on('mouseup' , function(){
+				$(this).removeClass('active');
+			});
+		},
+
 		areArraysEqual: function(a1,a2) {
 		    return JSON.stringify(a1)==JSON.stringify(a2);
 		},
@@ -154,7 +158,9 @@
 			Simon.gameOver = true;
 		}
 	}
-	Simon.init();
+	MIDI.loadPlugin(function() {
+		Simon.init();
+	});
 })();
 
 
