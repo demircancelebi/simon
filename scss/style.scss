@@ -34,7 +34,7 @@ $simon_says_font_size: $simon_size/17;
 		@extend .right; }
 	@if $number > 2 {
 		margin: -$simon_size / 2 0; }
-		@include transition(all 0.4s);
+		@include transition(all 0.08s);
 	&.hover, &:hover{
 		@include transition(all 0.1s);
 		background: darken(desaturate($color, 15%), 8%);
@@ -67,8 +67,6 @@ body{ margin:0; padding:0; background: rgba(0,0,0,.75)}
          url('fonts/PermanentMarker-webfont.svg#PermanentMarkerRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 .right{float: right;}

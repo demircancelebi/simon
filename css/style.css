@@ -21,10 +21,10 @@ body {
     -o-border-radius: 300px;
     border-radius: 300px;
     background: #e6e6e6;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+    -webkit-transition: all 0.08s;
+    -moz-transition: all 0.08s;
+    -o-transition: all 0.08s;
+    transition: all 0.08s;
     margin: 192.85714px;
     position: absolute; }
     /* line 38, ../scss/style.scss */
@@ -64,10 +64,10 @@ body {
       -o-border-radius: 300px;
       border-radius: 300px;
       background: #159922;
-      -webkit-transition: all 0.4s;
-      -moz-transition: all 0.4s;
-      -o-transition: all 0.4s;
-      transition: all 0.4s; }
+      -webkit-transition: all 0.08s;
+      -moz-transition: all 0.08s;
+      -o-transition: all 0.08s;
+      transition: all 0.08s; }
       /* line 38, ../scss/style.scss */
       .simon .simon-block .circle-1.hover, .simon .simon-block .circle-1:hover {
         -webkit-transition: all 0.1s;
@@ -92,10 +92,10 @@ body {
       -o-border-radius: 300px;
       border-radius: 300px;
       background: #cf1111;
-      -webkit-transition: all 0.4s;
-      -moz-transition: all 0.4s;
-      -o-transition: all 0.4s;
-      transition: all 0.4s; }
+      -webkit-transition: all 0.08s;
+      -moz-transition: all 0.08s;
+      -o-transition: all 0.08s;
+      transition: all 0.08s; }
       /* line 38, ../scss/style.scss */
       .simon .simon-block .circle-2.hover, .simon .simon-block .circle-2:hover {
         -webkit-transition: all 0.1s;
@@ -121,10 +121,10 @@ body {
       border-radius: 300px;
       background: #cfbf11;
       margin: -300px 0;
-      -webkit-transition: all 0.4s;
-      -moz-transition: all 0.4s;
-      -o-transition: all 0.4s;
-      transition: all 0.4s; }
+      -webkit-transition: all 0.08s;
+      -moz-transition: all 0.08s;
+      -o-transition: all 0.08s;
+      transition: all 0.08s; }
       /* line 38, ../scss/style.scss */
       .simon .simon-block .circle-3.hover, .simon .simon-block .circle-3:hover {
         -webkit-transition: all 0.1s;
@@ -150,10 +150,10 @@ body {
       border-radius: 300px;
       background: #1f5ddf;
       margin: -300px 0;
-      -webkit-transition: all 0.4s;
-      -moz-transition: all 0.4s;
-      -o-transition: all 0.4s;
-      transition: all 0.4s; }
+      -webkit-transition: all 0.08s;
+      -moz-transition: all 0.08s;
+      -o-transition: all 0.08s;
+      transition: all 0.08s; }
       /* line 38, ../scss/style.scss */
       .simon .simon-block .circle-4.hover, .simon .simon-block .circle-4:hover {
         -webkit-transition: all 0.1s;
@@ -173,6 +173,6 @@ body {
   font-weight: normal;
   font-style: normal; }
 
-/* line 74, ../scss/style.scss */
+/* line 72, ../scss/style.scss */
 .right, .simon .simon-block .circle-2, .simon .simon-block .circle-4 {
   float: right; }

@@ -53,8 +53,15 @@
 			})
 		},
 
+		makeTheGameFaster: function(fastest,decreaseLevel){
+			if(Simon.delayTime > fastest){
+				Simon.clickTime -= decreaseLevel;
+			}
+		},
+
 		newRound: function(){
-			Simon.delayTime = this.clickTime + 200;
+			Simon.delayTime = this.clickTime*2;
+			Simon.makeTheGameFaster(150,12);
 			Simon.roundNumber++;
 			Simon.simonSaysHandler('round');
 			setTimeout(function(){
